@@ -1,0 +1,32 @@
+name: New release version app
+description: Prepare la distribution d'une nouvelle version pour les applications
+title: '(release-version-app): '
+labels: ['release','app']
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Ce issue t'aide à distribuer une nouvelle version pour les applications!
+    - type: dropdown
+      id: release-type
+      attributes:
+          label: --Release--
+          description: En se basant sur [semver](https://semver.org/lang/fr/) [MAJEUR.MINEUR.CORRECTIF]
+          options:
+              - Mineur
+              - Majeur
+      validations:
+          required: true
+    - type: checkboxes
+      id: is-increment-runtime-version
+      attributes:
+          label: --RuntimeVersion--
+          description: "🚨 UNIQUEMENT POUR LES APPLICATIONS EXPO🚨 \n\nSi vous activez cette option, les versions précédentes de builds ne bénéficieront plus des mises à jour eas update de cette nouvelle version. \nvoir [Runtime version](https://docs.expo.dev/eas-update/runtime-versions/)"
+          options:
+              - label: Incrementer
+    - type: textarea
+      id: description
+      attributes:
+          label: --Description--
+          description: Veuillez donné une briève description des changements apportés.
+ 
