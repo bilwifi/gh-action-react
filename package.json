@@ -1,6 +1,6 @@
 {
   "name": "gh-action-react",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -15,7 +15,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "eslint": "npx eslint ./src",
+    "release": "npx standard-version",
+    "release:minor": "npx standard-version --release-as minor",
+    "release:patch": "npx standard-version --release-as patch",
+    "release:major": "npx standard-version --release-as major"
   },
   "eslintConfig": {
     "extends": [
