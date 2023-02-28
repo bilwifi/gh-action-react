@@ -1,5 +1,41 @@
 {
   "projects": {
-    "default": "napp-dev-d6ee7"
-  }
+    "default": "napp-dev-d6ee7",
+    "dev": "napp-dev-d6ee7",
+    "production": ""
+  },
+  "targets": {
+    "napp-dev-d6ee7": {
+      "hosting": {
+        "production": [
+          "gh-test-react-app"
+        ],
+        "alpha": [
+          "alpha-dev-test"
+        ],
+        "beta": [
+          "beta-dev-test"
+        ],
+
+        
+        "dev": [
+          "napp-dev-d6ee7"
+        ]
+      }
+    },
+    "PROJECT_PRODUCTION_ID": {
+      "hosting": {
+        "production": [
+          "ID_SITE"
+        ],
+        "beta": [
+          "ID_SITE"
+        ],
+        "alpha": [
+          "ID_SITE"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
