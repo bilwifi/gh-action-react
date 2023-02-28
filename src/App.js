@@ -17,6 +17,9 @@ function App() {
         >
           Learn React
         </a>
+        <h3>My env</h3>
+        <div>{JSON.stringify(process.env,null,4)}</div>
+
       </header>
     </div>
   );
