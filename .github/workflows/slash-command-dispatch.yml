@@ -43,5 +43,8 @@ jobs:
                   "command": "publish-preview",
                   "repository": "bilwifi/slash-command-processor",
                   "issue_type": "pull-request"
+                  "static_args": [
+                    "isAppReact"
+                  ]
                 }
               ]
