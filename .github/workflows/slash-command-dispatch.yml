@@ -41,7 +41,10 @@ jobs:
                 },
                 {
                   "command": "publish-preview",
-                  "repository": "bilwifi/slash-command-processor",
-                  "issue_type": "pull-request"
+                  "repository": "bilwifi/gh-action-test",
+                  "issue_type": "pull-request",
+                  "static_args": [
+                    "isAppReact"
+                  ]
                 }
               ]
