@@ -15,17 +15,17 @@ jobs:
              [
                 {
                   "command": "help",
-                  "repository": "bilwifi/slash-command-processor",
+                  "repository": "napp-inc/gh-actions",
                   "event_type_suffix": "-command-app"
                 },
                 {
                   "command": "start-pr",
-                  "repository": "bilwifi/slash-command-processor",
+                  "repository": "napp-inc/gh-actions",
                   "issue_type": "issue"
                 },
                 {
                   "command": "upgrade-to-beta",
-                  "repository": "bilwifi/slash-command-processor",
+                  "repository": "napp-inc/gh-actions",
                   "issue_type": "issue",
                   "static_args": [
                     "branch=staging"
@@ -33,7 +33,7 @@ jobs:
                 },
                 {
                   "command": "updgrade-to-prod",
-                  "repository": "bilwifi/slash-command-processor",
+                  "repository": "napp-inc/gh-actions",
                   "issue_type": "issue",
                   "static_args": [
                     "branch=production"
