@@ -4,5 +4,5 @@ on:
         types: [opened]
 jobs:
    generic-open-issue:
-    uses: bilwifi/gh-action-test/.github/workflows/generic-open-issue.yml@main
+    uses: napp-inc/gh-actions/.github/workflows/generic-open-issue.yml@main
     secrets: inherit
