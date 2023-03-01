@@ -9,7 +9,7 @@ on:
       - closed
 jobs:
   merged-branch-rules:
-    uses: bilwifi/gh-action-test/.github/workflows/generic-merge-branch-rules.yml@main
+    uses: napp-inc/gh-actions/.github/workflows/generic-merge-branch-rules.yml@main
     with: 
       isAppReact: true
       main: "production"
