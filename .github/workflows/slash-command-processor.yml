@@ -1,0 +1,12 @@
+name: Slash commande processor
+on:
+  repository_dispatch:
+    types: [publish-preview-command]
+jobs:
+  publish-preview:
+    uses: bilwifi/gh-action-test/.github/workflows/generic-firebase-hosting-preview.yml@main
+    if: github.event.client_payload.slash_command.command == 'publish-preview'
+    secrets: inherit
+    with:
+      repository: ${{ github.event.client_payload.github.payload.repository.full_name }}
+      branch: ${{ github.event.client_payload.github.payload.pull_request.head.ref }}

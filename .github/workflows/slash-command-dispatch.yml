@@ -41,10 +41,9 @@ jobs:
                 },
                 {
                   "command": "publish-preview",
-                  "repository": "bilwifi/gh-action-test",
                   "issue_type": "pull-request",
                   "static_args": [
-                    "isAppReact"
+                    "isAppReact=true"
                   ]
                 }
               ]
